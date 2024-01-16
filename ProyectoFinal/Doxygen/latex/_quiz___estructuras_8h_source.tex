@@ -1,0 +1,66 @@
+\doxysection{Quiz\+\_\+\+Estructuras.\+h}
+\hypertarget{_quiz___estructuras_8h_source}{}\label{_quiz___estructuras_8h_source}\index{C:/Users/Diego La Maxima/Desktop/IE0217/Repos/Proyecto/Proyecto Final/ie0217-\/proyecto/ProyectoFinal/Codigos Finales/Quiz\_Estructuras.h@{C:/Users/Diego La Maxima/Desktop/IE0217/Repos/Proyecto/Proyecto Final/ie0217-\/proyecto/ProyectoFinal/Codigos Finales/Quiz\_Estructuras.h}}
+\mbox{\hyperlink{_quiz___estructuras_8h}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ QUIZ\_ESTRUCTURAS\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ QUIZ\_ESTRUCTURAS\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ Importando\ Librerias\ de\ Qt}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QVector>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_quiz__de___estructuras}{Quiz\_de\_Estructuras}}\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ QString\ Pregunta;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Texto\ de\ la\ pregunta}}
+\DoxyCodeLine{00022\ \ \ \ \ QVector<QString>\ Respuestas;\ \ \ \ \ \ \ \textcolor{comment}{//\ Opciones\ posibles\ para\ la\ respuesta}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ Respuesta\_Correcta;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Índice\ de\ la\ respuesta\ correcta\ en\ el\ vector\ de\ opciones}}
+\DoxyCodeLine{00024\ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{comment}{//\ Espacio\ de\ nombres\ generado\ por\ Qt}}
+\DoxyCodeLine{00027\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }Preguntas\_Estructuras;}
+\DoxyCodeLine{00029\ \}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_quiz___estructuras}{Quiz\_Estructuras}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00035\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_quiz___estructuras}{Quiz\_Estructuras}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_quiz___estructuras_a9a21bb5321fa928bb1c5aa4da7554562}{\string~Quiz\_Estructuras}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quiz___estructuras_a07f62a9541eccd939c21efbda1aaf05a}{reiniciarQuiz}}();}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quiz___estructuras_aed63a34a3540011b832e54298de09289}{setTextoEnLabel}}(\textcolor{keyword}{const}\ QString\ \&texto);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quiz___estructuras_a652a67341e2b4f97ec0ac9602946ce76}{volver\_a\_Menu}}();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ signals:}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quiz___estructuras_a26098ed2c33f131a526657e8b9aaf699}{quizTerminado}}();}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quiz___estructuras_a1abb06f9235b45f6026c397655d2df95}{regresar\_a\_Menu}}();}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ mostrarSiguientePregunta();}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ mostrarPreguntaAnterior();}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{void}\ mostrarRespuestas();}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00096\ \ \ \ \ Ui::Preguntas\_Estructuras\ *ui;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Objeto\ de\ la\ interfaz\ de\ usuario\ generada\ por\ Qt}}
+\DoxyCodeLine{00097\ \ \ \ \ QVector<Quiz\_de\_Estructuras>\ texto;\ \textcolor{comment}{//\ Vector\ que\ almacena\ las\ preguntas\ del\ quiz}}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{int}\ preguntaActual;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Índice\ de\ la\ pregunta\ actual}}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{int}\ respuestasCorrectas;\ \ \ \ \ \textcolor{comment}{//\ Contador\ de\ respuestas\ correctas}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{comment}{//\ Muestra\ una\ pregunta\ específica}}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ mostrarPregunta(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_quiz__de___estructuras}{Quiz\_de\_Estructuras}}\ \&preguntas);}
+\DoxyCodeLine{00103\ \};}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ QUIZ\_ESTRUCTURAS\_H}}
+
+\end{DoxyCode}

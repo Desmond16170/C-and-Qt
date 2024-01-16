@@ -1,0 +1,87 @@
+\doxysection{Referencia de la clase Quiz\+\_\+\+Algoritmos}
+\hypertarget{class_quiz___algoritmos}{}\label{class_quiz___algoritmos}\index{Quiz\_Algoritmos@{Quiz\_Algoritmos}}
+
+
+Clase \doxylink{class_quiz___algoritmos}{Quiz\+\_\+\+Algoritmos} presenta las preguntas en formato quiz de seleccion unica, obtiene resultados y brinda una calificación.  
+
+
+
+
+{\ttfamily \#include $<$Quiz\+\_\+\+Algoritmos.\+h$>$}
+
+Diagrama de herencia de Quiz\+\_\+\+Algoritmos\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_quiz___algoritmos}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Señales}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_quiz___algoritmos_a29c535523f3afa4bb2a32fa908a07eee}\label{class_quiz___algoritmos_a29c535523f3afa4bb2a32fa908a07eee} 
+void {\bfseries quiz\+Terminado} ()
+\begin{DoxyCompactList}\small\item\em quiz\+Terminado Señal que se conecta con los botonos para indicar que el quiz termino \end{DoxyCompactList}\item 
+\Hypertarget{class_quiz___algoritmos_a98759c93680ffb73d2facf41885ceacb}\label{class_quiz___algoritmos_a98759c93680ffb73d2facf41885ceacb} 
+void {\bfseries regresar\+\_\+a\+\_\+\+Menu} ()
+\begin{DoxyCompactList}\small\item\em regresar\+\_\+a\+\_\+\+Menu Señal que se conecta con nuestro boton para regresar al menu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_quiz___algoritmos_a6a62f4816d7320070d03b82d52c0b1df}{Quiz\+\_\+\+Algoritmos}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{class_quiz___algoritmos}{Quiz\+\_\+\+Algoritmos}. \end{DoxyCompactList}\item 
+\Hypertarget{class_quiz___algoritmos_a960cc486fb7e3870d94819556e4f287c}\label{class_quiz___algoritmos_a960cc486fb7e3870d94819556e4f287c} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Quiz\+\_\+\+Algoritmos} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase \doxylink{class_quiz___algoritmos}{Quiz\+\_\+\+Algoritmos}. \end{DoxyCompactList}\item 
+\Hypertarget{class_quiz___algoritmos_a6c1e4b71318ad956c857d86a52095d9f}\label{class_quiz___algoritmos_a6c1e4b71318ad956c857d86a52095d9f} 
+void {\bfseries reiniciar\+Quiz} ()
+\begin{DoxyCompactList}\small\item\em reiniciar\+Quiz Reinicia a 0 la nota y el orden del quiz cada que el programa se cierra \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_quiz___algoritmos_a1100d79d4537ce192302b3710c35dd3a}{set\+Texto\+En\+Label}} (const QString \&texto)
+\begin{DoxyCompactList}\small\item\em set\+Texto\+En\+Label Ubica el texto en un QLabel(\+Cuadro de Texto) de la interfaz gráfica. \end{DoxyCompactList}\item 
+\Hypertarget{class_quiz___algoritmos_af9bbfed2cd1a49957160bdaddc6f0e3c}\label{class_quiz___algoritmos_af9bbfed2cd1a49957160bdaddc6f0e3c} 
+void {\bfseries volver\+\_\+a\+\_\+\+Menu} ()
+\begin{DoxyCompactList}\small\item\em volver\+\_\+a\+\_\+\+Menu Contiene las instrucciones para que el usuario vuelva al menu principal por medio de un boton \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase \doxylink{class_quiz___algoritmos}{Quiz\+\_\+\+Algoritmos} presenta las preguntas en formato quiz de seleccion unica, obtiene resultados y brinda una calificación. 
+
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{class_quiz___algoritmos_a6a62f4816d7320070d03b82d52c0b1df}\label{class_quiz___algoritmos_a6a62f4816d7320070d03b82d52c0b1df} 
+\index{Quiz\_Algoritmos@{Quiz\_Algoritmos}!Quiz\_Algoritmos@{Quiz\_Algoritmos}}
+\index{Quiz\_Algoritmos@{Quiz\_Algoritmos}!Quiz\_Algoritmos@{Quiz\_Algoritmos}}
+\doxysubsubsection{\texorpdfstring{Quiz\_Algoritmos()}{Quiz\_Algoritmos()}}
+{\footnotesize\ttfamily Quiz\+\_\+\+Algoritmos\+::\+Quiz\+\_\+\+Algoritmos (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor de la clase \doxylink{class_quiz___algoritmos}{Quiz\+\_\+\+Algoritmos}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em parent} & Es el widget padre de el provendran los otros widgets que se desplieguen a partir de esta ventana \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_quiz___algoritmos_a1100d79d4537ce192302b3710c35dd3a}\label{class_quiz___algoritmos_a1100d79d4537ce192302b3710c35dd3a} 
+\index{Quiz\_Algoritmos@{Quiz\_Algoritmos}!setTextoEnLabel@{setTextoEnLabel}}
+\index{setTextoEnLabel@{setTextoEnLabel}!Quiz\_Algoritmos@{Quiz\_Algoritmos}}
+\doxysubsubsection{\texorpdfstring{setTextoEnLabel()}{setTextoEnLabel()}}
+{\footnotesize\ttfamily void Quiz\+\_\+\+Algoritmos\+::set\+Texto\+En\+Label (\begin{DoxyParamCaption}\item[{const QString \&}]{texto }\end{DoxyParamCaption})}
+
+
+
+set\+Texto\+En\+Label Ubica el texto en un QLabel(\+Cuadro de Texto) de la interfaz gráfica. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em texto} & Cadena de Caracteres \\
+\hline
+\end{DoxyParams}
+
+
+La documentación de esta clase está generada de los siguientes archivos\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Diego La Maxima/\+Desktop/\+IE0217/\+Repos/\+Proyecto/\+Proyecto Final/ie0217-\/proyecto/\+Proyecto\+Final/\+Codigos Finales/\mbox{\hyperlink{_quiz___algoritmos_8h}{Quiz\+\_\+\+Algoritmos.\+h}}\item 
+C\+:/\+Users/\+Diego La Maxima/\+Desktop/\+IE0217/\+Repos/\+Proyecto/\+Proyecto Final/ie0217-\/proyecto/\+Proyecto\+Final/\+Codigos Finales/\mbox{\hyperlink{_quiz___algoritmos_8cpp}{Quiz\+\_\+\+Algoritmos.\+cpp}}\end{DoxyCompactItemize}

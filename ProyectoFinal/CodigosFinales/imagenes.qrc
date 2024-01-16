@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/Bubblesort.png</file>
+        <file>images/Menu_Est.jpg</file>
+        <file>images/Arreglos.png</file>
+        <file>images/Listas.jpg</file>
+        <file>images/Pilas.png</file>
+        <file>images/Colas.png</file>
+        <file>images/Arbol.png</file>
+        <file>images/Grafo.png</file>
+        <file>images/Arbol_Bin.jpg</file>
+        <file>images/insertionsort.png</file>
+        <file>images/Merge-Sort-Algorithm.png</file>
+        <file>images/orden.png</file>
+        <file>images/quick-sort-part-1.png</file>
+        <file>images/quick-sort-part-2.png</file>
+        <file>images/selection-short.png</file>
+        <file>images/Clase.png</file>
+        <file>images/Respuestas.png</file>
+        <file>images/Menu.png</file>
+        <file>images/quiz.png</file>
+        <file>images/Siguiente.png</file>
+        <file>images/Anterior.png</file>
+        <file>images/Colas_Pri.png</file>
+        <file>images/diccionario.png</file>
+        <file>images/librero.png</file>
+        <file>images/Estructuras.png</file>
+        <file>images/ordenamiento.png</file>
+        <file>images/Pilas_Ope.png</file>
+        <file>images/Complejidad.png</file>
+        <file>images/appicon.ico</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>

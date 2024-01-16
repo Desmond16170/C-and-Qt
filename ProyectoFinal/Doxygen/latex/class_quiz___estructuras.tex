@@ -1,0 +1,87 @@
+\doxysection{Referencia de la clase Quiz\+\_\+\+Estructuras}
+\hypertarget{class_quiz___estructuras}{}\label{class_quiz___estructuras}\index{Quiz\_Estructuras@{Quiz\_Estructuras}}
+
+
+Clase \doxylink{class_quiz___estructuras}{Quiz\+\_\+\+Estructuras} presenta las preguntas en formato quiz de seleccion unica, obtiene resultados y brinda una calificación.  
+
+
+
+
+{\ttfamily \#include $<$Quiz\+\_\+\+Estructuras.\+h$>$}
+
+Diagrama de herencia de Quiz\+\_\+\+Estructuras\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_quiz___estructuras}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Señales}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_quiz___estructuras_a26098ed2c33f131a526657e8b9aaf699}\label{class_quiz___estructuras_a26098ed2c33f131a526657e8b9aaf699} 
+void {\bfseries quiz\+Terminado} ()
+\begin{DoxyCompactList}\small\item\em quiz\+Terminado Señal que se conecta con los botonos para indicar que el quiz termino \end{DoxyCompactList}\item 
+\Hypertarget{class_quiz___estructuras_a1abb06f9235b45f6026c397655d2df95}\label{class_quiz___estructuras_a1abb06f9235b45f6026c397655d2df95} 
+void {\bfseries regresar\+\_\+a\+\_\+\+Menu} ()
+\begin{DoxyCompactList}\small\item\em regresar\+\_\+a\+\_\+\+Menu Señal que se conecta con nuestro boton para regresar al menu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_quiz___estructuras_aa79355e897df8aaf6d07ad0a01eb05a0}{Quiz\+\_\+\+Estructuras}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{class_quiz___estructuras}{Quiz\+\_\+\+Estructuras}. \end{DoxyCompactList}\item 
+\Hypertarget{class_quiz___estructuras_a9a21bb5321fa928bb1c5aa4da7554562}\label{class_quiz___estructuras_a9a21bb5321fa928bb1c5aa4da7554562} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Quiz\+\_\+\+Estructuras} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase \doxylink{class_quiz___estructuras}{Quiz\+\_\+\+Estructuras}. \end{DoxyCompactList}\item 
+\Hypertarget{class_quiz___estructuras_a07f62a9541eccd939c21efbda1aaf05a}\label{class_quiz___estructuras_a07f62a9541eccd939c21efbda1aaf05a} 
+void {\bfseries reiniciar\+Quiz} ()
+\begin{DoxyCompactList}\small\item\em reiniciar\+Quiz Reinicia a 0 la nota y el orden del quiz cada que el programa se cierra \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_quiz___estructuras_aed63a34a3540011b832e54298de09289}{set\+Texto\+En\+Label}} (const QString \&texto)
+\begin{DoxyCompactList}\small\item\em set\+Texto\+En\+Label Ubica el texto en un QLabel(\+Cuadro de Texto) de la interfaz gráfica. \end{DoxyCompactList}\item 
+\Hypertarget{class_quiz___estructuras_a652a67341e2b4f97ec0ac9602946ce76}\label{class_quiz___estructuras_a652a67341e2b4f97ec0ac9602946ce76} 
+void {\bfseries volver\+\_\+a\+\_\+\+Menu} ()
+\begin{DoxyCompactList}\small\item\em volver\+\_\+a\+\_\+\+Menu Contiene las instrucciones para que el usuario vuelva al menu principal por medio de un boton \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase \doxylink{class_quiz___estructuras}{Quiz\+\_\+\+Estructuras} presenta las preguntas en formato quiz de seleccion unica, obtiene resultados y brinda una calificación. 
+
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{class_quiz___estructuras_aa79355e897df8aaf6d07ad0a01eb05a0}\label{class_quiz___estructuras_aa79355e897df8aaf6d07ad0a01eb05a0} 
+\index{Quiz\_Estructuras@{Quiz\_Estructuras}!Quiz\_Estructuras@{Quiz\_Estructuras}}
+\index{Quiz\_Estructuras@{Quiz\_Estructuras}!Quiz\_Estructuras@{Quiz\_Estructuras}}
+\doxysubsubsection{\texorpdfstring{Quiz\_Estructuras()}{Quiz\_Estructuras()}}
+{\footnotesize\ttfamily Quiz\+\_\+\+Estructuras\+::\+Quiz\+\_\+\+Estructuras (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor de la clase \doxylink{class_quiz___estructuras}{Quiz\+\_\+\+Estructuras}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em parent} & Es el widget padre de el provendran los otros widgets que se desplieguen a partir de esta ventana \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_quiz___estructuras_aed63a34a3540011b832e54298de09289}\label{class_quiz___estructuras_aed63a34a3540011b832e54298de09289} 
+\index{Quiz\_Estructuras@{Quiz\_Estructuras}!setTextoEnLabel@{setTextoEnLabel}}
+\index{setTextoEnLabel@{setTextoEnLabel}!Quiz\_Estructuras@{Quiz\_Estructuras}}
+\doxysubsubsection{\texorpdfstring{setTextoEnLabel()}{setTextoEnLabel()}}
+{\footnotesize\ttfamily void Quiz\+\_\+\+Estructuras\+::set\+Texto\+En\+Label (\begin{DoxyParamCaption}\item[{const QString \&}]{texto }\end{DoxyParamCaption})}
+
+
+
+set\+Texto\+En\+Label Ubica el texto en un QLabel(\+Cuadro de Texto) de la interfaz gráfica. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em texto} & Cadena de Caracteres \\
+\hline
+\end{DoxyParams}
+
+
+La documentación de esta clase está generada de los siguientes archivos\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Diego La Maxima/\+Desktop/\+IE0217/\+Repos/\+Proyecto/\+Proyecto Final/ie0217-\/proyecto/\+Proyecto\+Final/\+Codigos Finales/\mbox{\hyperlink{_quiz___estructuras_8h}{Quiz\+\_\+\+Estructuras.\+h}}\item 
+C\+:/\+Users/\+Diego La Maxima/\+Desktop/\+IE0217/\+Repos/\+Proyecto/\+Proyecto Final/ie0217-\/proyecto/\+Proyecto\+Final/\+Codigos Finales/\mbox{\hyperlink{_quiz___estructuras_8cpp}{Quiz\+\_\+\+Estructuras.\+cpp}}\end{DoxyCompactItemize}

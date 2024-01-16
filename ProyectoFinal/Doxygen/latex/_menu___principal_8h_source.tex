@@ -1,0 +1,58 @@
+\doxysection{Menu\+\_\+\+Principal.\+h}
+\hypertarget{_menu___principal_8h_source}{}\label{_menu___principal_8h_source}\index{C:/Users/Diego La Maxima/Desktop/IE0217/Repos/Proyecto/Proyecto Final/ie0217-\/proyecto/ProyectoFinal/Codigos Finales/Menu\_Principal.h@{C:/Users/Diego La Maxima/Desktop/IE0217/Repos/Proyecto/Proyecto Final/ie0217-\/proyecto/ProyectoFinal/Codigos Finales/Menu\_Principal.h}}
+\mbox{\hyperlink{_menu___principal_8h}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#ifndef\ MENU\_PRINCIPAL\_H}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ MENU\_PRINCIPAL\_H}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_quiz___estructuras_8h}{Quiz\_Estructuras.h}}"{}}\ \textcolor{comment}{//\ Añadiendo\ Clase\ Quiz\_Estructuras}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_quiz___algoritmos_8h}{Quiz\_Algoritmos.h}}"{}}\ \textcolor{comment}{//\ Añadiendo\ Clase\ Quiz\_Algoritmos}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_clase___educativa___est_8h}{Clase\_Educativa\_Est.h}}"{}}\ \textcolor{comment}{//\ Añadiendo\ Clase\ Leccion\_Estructuras}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_clase___educativa___alg_8h}{Clase\_Educativa\_Alg.h}}"{}}\ \textcolor{comment}{//\ Añadiedno\ Clase\ Leccion\_Algortmos}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QMainWindow>}\ \textcolor{comment}{//\ Importando\ libreria\ de\ Qt}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ Espacio\ de\ nombres\ generado\ por\ Qt}}
+\DoxyCodeLine{00021\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_menu_principal}{MenuPrincipal}};}
+\DoxyCodeLine{00023\ \}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_menu_principal}{MenuPrincipal}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00029\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{comment}{//\ Metodos\ tipo\ void\ no\ devuelven\ ningun\ valor}}
+\DoxyCodeLine{00033\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_menu_principal}{MenuPrincipal}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_menu_principal_a5f451a872334cfa96b59f47dbae52adc}{\string~MenuPrincipal}}();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menu_principal_a8e11d33f20f1379029c1812b504bb625}{setTextoEnLabel}}(\textcolor{keyword}{const}\ QString\ \&texto);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{comment}{//\ Slots\ para\ mostrar\ diferentes\ ventanas\ o\ funcionalidades}}
+\DoxyCodeLine{00054\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ mostrar\_Quiz\_Estructuras();}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ mostrar\_Quiz\_Algoritmos();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ mostrar\_Leccion\_Estructuras();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ mostrar\_Leccion\_Algoritmos();}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ Desplegar();}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00082\ \ \ \ \ Ui::MenuPrincipal\ *ui;\ \ \ \ \textcolor{comment}{//\ Objeto\ de\ la\ interfaz\ de\ usuario\ generada\ por\ Qt}}
+\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{class_quiz___estructuras}{Quiz\_Estructuras}}\ *\mbox{\hyperlink{struct_quiz__de___estructuras}{Quiz\_de\_Estructuras}};\ \ \ \textcolor{comment}{//\ Instancia\ de\ la\ clase\ Quiz\_de\_Estructuras}}
+\DoxyCodeLine{00084\ \ \ \ \ \mbox{\hyperlink{class_quiz___algoritmos}{Quiz\_Algoritmos}}\ *\mbox{\hyperlink{struct_quiz__de___algoritmos}{Quiz\_de\_Algoritmos}};\ \ \ \textcolor{comment}{//\ Instancia\ de\ la\ clase\ Quiz\_de\_Algoritmos}}
+\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{class_leccion___estructuras}{Leccion\_Estructuras}}\ *Leccion\_de\_Estructuras;\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Instancia\ de\ la\ clase\ Leccion\_de\_Estructuras}}
+\DoxyCodeLine{00086\ \ \ \ \ \mbox{\hyperlink{class_leccion___algoritmos}{Leccion\_Algoritmos}}\ *Leccion\_de\_Algoritmos;\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Instancia\ de\ la\ clase\ Leccion\_de\_Algoritmos}}
+\DoxyCodeLine{00087\ \};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MENU\_PRINCIPAL\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,67 @@
+\doxysection{Quiz\+\_\+\+Desde\+\_\+\+Clase\+Est.\+h}
+\hypertarget{_quiz___desde___clase_est_8h_source}{}\label{_quiz___desde___clase_est_8h_source}\index{C:/Users/Diego La Maxima/Desktop/IE0217/Repos/Proyecto/Proyecto Final/ie0217-\/proyecto/ProyectoFinal/Codigos Finales/Quiz\_Desde\_ClaseEst.h@{C:/Users/Diego La Maxima/Desktop/IE0217/Repos/Proyecto/Proyecto Final/ie0217-\/proyecto/ProyectoFinal/Codigos Finales/Quiz\_Desde\_ClaseEst.h}}
+\mbox{\hyperlink{_quiz___desde___clase_est_8h}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ QUIZ\_DESDE\_CLASEEST\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ QUIZ\_DESDE\_CLASEEST\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ Importando\ librerias\ de\ Qt}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QVector>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_quiz___desde___leccion1}{Quiz\_Desde\_Leccion1}}\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ QString\ Pregunta;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Texto\ de\ la\ pregunta}}
+\DoxyCodeLine{00022\ \ \ \ \ QVector<QString>\ Respuestas;\ \ \ \ \ \ \ \textcolor{comment}{//\ Opciones\ posibles\ para\ la\ respuesta}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ Respuesta\_Correcta;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Índice\ de\ la\ respuesta\ correcta\ en\ el\ vector\ de\ opciones}}
+\DoxyCodeLine{00024\ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{comment}{//\ Espacio\ de\ nombres\ generado\ por\ Qt}}
+\DoxyCodeLine{00027\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }Preguntas\_Leccion\_Est;}
+\DoxyCodeLine{00029\ \}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_quiz___desde___estructuras}{Quiz\_Desde\_Estructuras}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00035\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_quiz___desde___estructuras}{Quiz\_Desde\_Estructuras}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_quiz___desde___estructuras_a7df459d82d73da6fb792ea900193e4f8}{\string~Quiz\_Desde\_Estructuras}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quiz___desde___estructuras_ad5f22514710a973ccb13c3b673da9c44}{reiniciarQuiz}}();}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quiz___desde___estructuras_a9857b2acdced256678e6ffea244f1a25}{setTextoEnLabel}}(\textcolor{keyword}{const}\ QString\ \&texto);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ signals:}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quiz___desde___estructuras_a6484a6af50dcc576cc9353b1cc9f82c7}{quizTerminado}}();}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quiz___desde___estructuras_a7b5068587810ebd5e2e219ce357cff8d}{regresar\_a\_Menu}}();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quiz___desde___estructuras_a5c031678ce939f13b0810a8c331cce1a}{regreso\_a\_Leccion}}();}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ mostrarSiguientePregunta();}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{void}\ mostrarPreguntaAnterior();}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ mostrarRespuestas();}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{void}\ volviendo\_a\_Leccion();}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00100\ \ \ \ \ Ui::Preguntas\_Leccion\_Est\ *ui;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Objeto\ de\ la\ interfaz\ de\ usuario\ generada\ por\ Qt}}
+\DoxyCodeLine{00101\ \ \ \ \ QVector<Quiz\_Desde\_Leccion1>\ texto;\ \ \ \ \textcolor{comment}{//\ Vector\ que\ almacena\ las\ preguntas\ del\ quiz}}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{int}\ preguntaActual;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Índice\ de\ la\ pregunta\ actual}}
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordtype}{int}\ respuestasCorrectas;\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Contador\ de\ respuestas\ correctas}}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{comment}{//\ Muestra\ una\ pregunta\ específica}}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{void}\ mostrarPregunta(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_quiz___desde___leccion1}{Quiz\_Desde\_Leccion1}}\ \&pregunta);}
+\DoxyCodeLine{00107\ \};}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ pregunta1copia\_H}}
+
+\end{DoxyCode}

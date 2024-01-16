@@ -1,0 +1,68 @@
+\doxysection{Quiz\+\_\+\+Algoritmos.\+h}
+\hypertarget{_quiz___algoritmos_8h_source}{}\label{_quiz___algoritmos_8h_source}\index{C:/Users/Diego La Maxima/Desktop/IE0217/Repos/Proyecto/Proyecto Final/ie0217-\/proyecto/ProyectoFinal/Codigos Finales/Quiz\_Algoritmos.h@{C:/Users/Diego La Maxima/Desktop/IE0217/Repos/Proyecto/Proyecto Final/ie0217-\/proyecto/ProyectoFinal/Codigos Finales/Quiz\_Algoritmos.h}}
+\mbox{\hyperlink{_quiz___algoritmos_8h}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ QUIZ\_ALGORITMOS\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ QUIZ\_ALGORITMOS\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ Importanto\ librerias\ de\ Qt}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QVector>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_quiz__de___algoritmos}{Quiz\_de\_Algoritmos}}\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ QString\ Pregunta;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Texto\ de\ la\ pregunta}}
+\DoxyCodeLine{00023\ \ \ \ \ QVector<QString>\ Respuestas;\ \ \ \ \ \ \ \textcolor{comment}{//\ Opciones\ posibles\ para\ la\ respuesta}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ Respuesta\_Correcta;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Índice\ de\ la\ respuesta\ correcta\ en\ el\ vector\ de\ opciones}}
+\DoxyCodeLine{00025\ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{comment}{//\ Espacio\ de\ nombres\ generado\ por\ Qt}}
+\DoxyCodeLine{00028\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }Preguntas\_Algoritmos;}
+\DoxyCodeLine{00030\ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_quiz___algoritmos}{Quiz\_Algoritmos}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00036\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_quiz___algoritmos}{Quiz\_Algoritmos}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_quiz___algoritmos_a960cc486fb7e3870d94819556e4f287c}{\string~Quiz\_Algoritmos}}();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quiz___algoritmos_a6c1e4b71318ad956c857d86a52095d9f}{reiniciarQuiz}}();}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quiz___algoritmos_a1100d79d4537ce192302b3710c35dd3a}{setTextoEnLabel}}(\textcolor{keyword}{const}\ QString\ \&texto);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quiz___algoritmos_af9bbfed2cd1a49957160bdaddc6f0e3c}{volver\_a\_Menu}}();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ signals:}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quiz___algoritmos_a29c535523f3afa4bb2a32fa908a07eee}{quizTerminado}}();}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quiz___algoritmos_a98759c93680ffb73d2facf41885ceacb}{regresar\_a\_Menu}}();}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{void}\ mostrarSiguientePregunta();}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ mostrarPreguntaAnterior();}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{void}\ mostrarRespuestas();}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00098\ \ \ \ \ Ui::Preguntas\_Algoritmos\ *ui;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Objeto\ de\ la\ interfaz\ de\ usuario\ generada\ por\ Qt}}
+\DoxyCodeLine{00099\ \ \ \ \ QVector<Quiz\_de\_Algoritmos>\ texto;\ \ \ \ \textcolor{comment}{//\ Vector\ que\ almacena\ las\ preguntas\ del\ quiz}}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{int}\ preguntaActual;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Índice\ de\ la\ pregunta\ actual}}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{int}\ respuestasCorrectas;\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Contador\ de\ respuestas\ correctas}}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{comment}{//\ Muestra\ una\ pregunta\ específica}}
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{void}\ mostrarPregunta(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_quiz__de___algoritmos}{Quiz\_de\_Algoritmos}}\ \&pregunta);}
+\DoxyCodeLine{00105\ \};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ QUIZ\_ALGORITMOS\_H}}
+
+\end{DoxyCode}

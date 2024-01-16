@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['settextoenlabel_0',['settextoenlabel',['../class_leccion___algoritmos.html#a506046062141fd0260891b49a5b54dbe',1,'Leccion_Algoritmos::setTextoEnLabel()'],['../class_leccion___estructuras.html#a8cb9bebbdbbc5522565192b8cf1bf1f6',1,'Leccion_Estructuras::setTextoEnLabel()'],['../class_menu_principal.html#a8e11d33f20f1379029c1812b504bb625',1,'MenuPrincipal::setTextoEnLabel()'],['../class_quiz___algoritmos.html#a1100d79d4537ce192302b3710c35dd3a',1,'Quiz_Algoritmos::setTextoEnLabel()'],['../class_quiz___desde___algoritmos.html#a2e5f2ea3f3b0f4273a7cd64caa074955',1,'Quiz_Desde_Algoritmos::setTextoEnLabel()'],['../class_quiz___desde___estructuras.html#a9857b2acdced256678e6ffea244f1a25',1,'Quiz_Desde_Estructuras::setTextoEnLabel()'],['../class_quiz___estructuras.html#aed63a34a3540011b832e54298de09289',1,'Quiz_Estructuras::setTextoEnLabel()']]],
+  ['sistema_20de_20aprendizaje_1',['Aplicacion tipo Mi Primera Encarta (Sistema de Aprendizaje)',['../md__c_1_2_users_2_diego_01_la_01_maxima_2_desktop_2_i_e0217_2_repos_2_proyecto_2_proyecto_01_fin0c39f4faff93a521f9e53a22e15deafb.html#autotoc_md1',1,'']]]
+];

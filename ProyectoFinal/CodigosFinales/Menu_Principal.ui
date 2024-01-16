@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MenuPrincipal</class>
+ <widget class="QMainWindow" name="MenuPrincipal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>885</width>
+    <height>425</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>885</width>
+    <height>424</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>885</width>
+    <height>425</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Menú Principal</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(25, 34, 41);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>101</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Rounded MT Bold</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(33, 46, 54);
+background-color: rgb(36, 49, 59);
+border-top-color: rgb(42, 59, 71);
+border-right-color: rgb(42, 59, 71);
+border-buttom-color: rgb(42, 59, 71);
+border-left-color: rgb(42, 59, 71);
+color: rgb(16, 131, 214);
+
+</string>
+    </property>
+    <property name="text">
+     <string>Bienvenido:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="iD">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>10</y>
+      <width>121</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Rounded MT Bold</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(33, 46, 54);
+background-color: rgb(36, 49, 59);
+border-top-color: rgb(42, 59, 71);
+border-right-color: rgb(42, 59, 71);
+border-buttom-color: rgb(42, 59, 71);
+border-left-color: rgb(42, 59, 71);
+color: rgb(16, 131, 214);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>10</y>
+      <width>461</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Rounded MT Bold</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(33, 46, 54);
+background-color: rgb(36, 49, 59);
+border-top-color: rgb(42, 59, 71);
+border-right-color: rgb(42, 59, 71);
+border-buttom-color: rgb(42, 59, 71);
+border-left-color: rgb(42, 59, 71);
+color: rgb(16, 131, 214);
+</string>
+    </property>
+    <property name="text">
+     <string>¿Sobre que quieres aprender hoy?</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>150</y>
+      <width>311</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(33, 46, 54);
+background-color: rgb(36, 49, 59);
+border-top-color: rgb(42, 59, 71);
+border-right-color: rgb(42, 59, 71);
+border-buttom-color: rgb(42, 59, 71);
+border-left-color: rgb(42, 59, 71);
+color: rgb(16, 131, 214);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="imagenes.qrc">:/images/images/ordenamiento.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>48</x>
+      <y>148</y>
+      <width>311</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="imagenes.qrc">:/images/images/Menu_Est.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>330</y>
+      <width>311</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="ClaseAlgoritmos">
+       <property name="styleSheet">
+        <string notr="true">border-style: solid;
+border-width: 1px;
+;
+background-color: rgb(0, 120, 100);
+color: rgb(255, 255, 255);
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>Clase Educativa</string>
+       </property>
+       <property name="icon">
+        <iconset resource="imagenes.qrc">
+         <normaloff>:/images/images/Clase.png</normaloff>:/images/images/Clase.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="quizAlgoritmos">
+       <property name="styleSheet">
+        <string notr="true">border-style: solid;
+border-width: 1px;
+;
+background-color: rgb(0, 120, 100);
+color: rgb(255, 255, 255);
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>Quiz sobre Estructuras</string>
+       </property>
+       <property name="icon">
+        <iconset resource="imagenes.qrc">
+         <normaloff>:/images/images/quiz.png</normaloff>:/images/images/quiz.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>330</y>
+      <width>311</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="ClaseOrdenamieto">
+       <property name="styleSheet">
+        <string notr="true">border-style: solid;
+border-width: 1px;
+;
+background-color: rgb(0, 120, 100);
+color: rgb(255, 255, 255);
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>Clase Educativa</string>
+       </property>
+       <property name="icon">
+        <iconset resource="imagenes.qrc">
+         <normaloff>:/images/images/Clase.png</normaloff>:/images/images/Clase.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="quizOrdenamieto">
+       <property name="styleSheet">
+        <string notr="true">border-style: solid;
+border-width: 1px;
+;
+background-color: rgb(0, 120, 100);
+color: rgb(255, 255, 255);
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>Quiz sobre Algoritmos</string>
+       </property>
+       <property name="icon">
+        <iconset resource="imagenes.qrc">
+         <normaloff>:/images/images/quiz.png</normaloff>:/images/images/quiz.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>80</y>
+      <width>311</width>
+      <height>59</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Rounded MT Bold</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(33, 46, 54);
+background-color: rgb(36, 49, 59);
+border-top-color: rgb(42, 59, 71);
+border-right-color: rgb(42, 59, 71);
+border-buttom-color: rgb(42, 59, 71);
+border-left-color: rgb(42, 59, 71);
+color: rgb(16, 131, 214);
+</string>
+    </property>
+    <property name="text">
+     <string>Estructuras de Datos</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>80</y>
+      <width>311</width>
+      <height>59</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Rounded MT Bold</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(33, 46, 54);
+background-color: rgb(36, 49, 59);
+border-top-color: rgb(42, 59, 71);
+border-right-color: rgb(42, 59, 71);
+border-buttom-color: rgb(42, 59, 71);
+border-left-color: rgb(42, 59, 71);
+color: rgb(16, 131, 214);
+</string>
+    </property>
+    <property name="text">
+     <string>Algoritmos de Ordenamiento</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="iD_2">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>10</y>
+      <width>211</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Rounded MT Bold</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(33, 46, 54);
+background-color: rgb(36, 49, 59);
+border-top-color: rgb(42, 59, 71);
+border-right-color: rgb(42, 59, 71);
+border-buttom-color: rgb(42, 59, 71);
+border-left-color: rgb(42, 59, 71);
+color: rgb(16, 131, 214);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>
